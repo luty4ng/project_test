@@ -1,0 +1,1471 @@
+[
+  {
+    "id": 10001,
+    "code_name": "bd_regular_tower",
+    "name": "物质抛射塔",
+    "desc": "发射造成 10 点常规伤害的射弹",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_MissleStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10002,
+    "code_name": "bd_fire_clicker",
+    "name": "灼热弹射塔",
+    "desc": "发射造成 3 点灼烧伤害的射弹",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_LaserGroup",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10003,
+    "code_name": "bd_toxic_clicker",
+    "name": "腐蚀弹射塔",
+    "desc": "发射造成 3 点腐蚀伤害的射弹",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_toxic_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_toxic_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_EjectStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10004,
+    "code_name": "bd_accelerate_tower",
+    "name": "全覆盖加速塔",
+    "desc": "加速星球上所有其他建筑 1 秒",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSOtherBuildingOnSourcePlanet",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_EjectStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10005,
+    "code_name": "bd_recharge_tower",
+    "name": "全覆盖充能塔",
+    "desc": "充能星球上所有其他建筑 1 秒",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSOtherBuildingOnSourcePlanet",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recharge",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recharge",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_LaserGroup",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10006,
+    "code_name": "bd_left_accelerator",
+    "name": "左侧加速器",
+    "desc": "左侧加速 2 秒",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSLeftNearBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10007,
+    "code_name": "bd_right_accelerator",
+    "name": "右侧加速器",
+    "desc": "右侧加速 2 秒",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSRightNearBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10008,
+    "code_name": "bd_fire_canno",
+    "name": "连射火炮",
+    "desc": "发射造成 3 点灼烧伤害的射弹",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 3,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10009,
+    "code_name": "bd_ac_shooter",
+    "name": "速响抛射塔",
+    "desc": "受到加速时，发射造成 30 点常规伤害的射弹，每次触发临时攻击 + 5",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 0,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [
+      "effect_accelerate_enter"
+    ],
+    "trigger_condition": "TCTargetIsResponder",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  30
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10010,
+    "code_name": "bd_ac_shooter_growup",
+    "name": "速响成长抛射塔",
+    "desc": "受到加速时，发射造成 5 点常规伤害的射弹，每次触发永久攻击 + 10",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 0,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [
+      "effect_accelerate_enter"
+    ],
+    "trigger_condition": "TCTargetIsResponder",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power_p",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power_p",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10011,
+    "code_name": "bd_burn_steel",
+    "name": "火钢弹",
+    "desc": "造成 3 灼烧，造成灼烧10倍的常规伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_to_regular",
+              "EffectParamMap": [
+                [
+                  "Param.GE.BonusK",
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_to_regular",
+              "EffectParamMap": [
+                [
+                  "Param.GE.BonusK",
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10012,
+    "code_name": "bd_split_forge",
+    "name": "溅射熔炉",
+    "desc": "两侧建筑的灼烧威力 +5",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSNearBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10013,
+    "code_name": "bd_shield_activator",
+    "name": "护盾发生器",
+    "desc": "产生 20 点护盾值",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_shield_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_shield_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  20
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10014,
+    "code_name": "bd_recover_activator",
+    "name": "治疗发生器",
+    "desc": "恢复 15 点结构值",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recover_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recover_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  15
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10015,
+    "code_name": "bd_toxic_bomb",
+    "name": "腐蚀性炸弹",
+    "desc": "造成 5 点腐蚀伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_toxic_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_toxic_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10016,
+    "code_name": "bd_test_regular_spark",
+    "name": "测试常规微光塔",
+    "desc": "测试条目：造成 12 点常规伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  12
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_MissleStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10017,
+    "code_name": "bd_test_fire_spark",
+    "name": "测试灼热微光塔",
+    "desc": "测试条目：造成 4 点灼烧伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_LaserGroup",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10018,
+    "code_name": "bd_test_toxic_spark",
+    "name": "测试腐蚀微光塔",
+    "desc": "测试条目：造成 4 点腐蚀伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_toxic_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_toxic_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_EjectStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10019,
+    "code_name": "bd_test_shield_node",
+    "name": "测试护盾节点",
+    "desc": "测试条目：产生 25 点护盾值",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_shield_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_shield_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  25
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10020,
+    "code_name": "bd_test_recover_node",
+    "name": "测试修复节点",
+    "desc": "测试条目：恢复 18 点结构值",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recover_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recover_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  18
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10021,
+    "code_name": "bd_test_accelerate_pulse",
+    "name": "测试加速脉冲塔",
+    "desc": "测试条目：加速同星球其他建筑 2 秒",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSOtherBuildingOnSourcePlanet",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_accelerate",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_EjectStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10022,
+    "code_name": "bd_test_recharge_pulse",
+    "name": "测试充能脉冲塔",
+    "desc": "测试条目：充能同星球其他建筑 2 秒",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSOtherBuildingOnSourcePlanet",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recharge",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_recharge",
+              "EffectParamMap": [
+                [
+                  "Param.GE.Time",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_LaserGroup",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10023,
+    "code_name": "bd_test_burn_focus",
+    "name": "测试灼烧聚焦器",
+    "desc": "测试条目：两侧建筑灼烧威力 +8",
+    "category": [
+      4
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 4,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "TriggerEffect",
+        "strategyLogic": "TSNearBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10024,
+    "code_name": "bd_test_regular_cannon",
+    "name": "测试常规连射炮",
+    "desc": "测试条目：发射 3 次，每次造成 6 点常规伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 6,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 3,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_regular_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  6
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_MissleStation",
+    "asset_tags": [],
+    "related_keywords": []
+  },
+  {
+    "id": 10025,
+    "code_name": "bd_test_burn_converter",
+    "name": "测试灼烧转换器",
+    "desc": "测试条目：造成 2 灼烧，并按灼烧 6 倍造成常规伤害",
+    "category": [
+      1
+    ],
+    "grade": 0,
+    "allow_manual_targeting": false,
+    "mainTS": "TSNearestPlanet",
+    "secondaryTS": "TSSelfPlanet",
+    "cooldown_duration": 0,
+    "channel_duration": 5,
+    "ready_duration": 0,
+    "range": -1,
+    "trigger_count": 1,
+    "trigger_events": [],
+    "trigger_condition": "",
+    "ability_pairs": [
+      {
+        "abilityName": "MaintainEffect",
+        "strategyLogic": "TSSelfBuilding",
+        "overrideEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        "upgradeEffectParams": {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power",
+              "EffectParamMap": [
+                [
+                  "Param.MMC.B",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icon_asset_id": "Icon_JumpActivator",
+    "asset_tags": [],
+    "related_keywords": []
+  }
+]

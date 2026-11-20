@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1001,
+    "code_name": "BuildingCommon",
+    "ability_name": "建筑通用",
+    "ability_desc": "建筑通用（自动根据威力激发）",
+    "asset_tags": [],
+    "cooldown_duration": 0,
+    "channel_duration": 0,
+    "ready_duration": 0,
+    "cast_range": -1,
+    "trigger_count": 1,
+    "ability_logic": {
+      "$type": "ALBuildingCommon"
+    },
+    "cancel_ability_with_tags": [],
+    "block_ability_with_tags": [],
+    "activation_owned_tags": [],
+    "activation_required_tags": [],
+    "activation_blocked_tags": []
+  },
+  {
+    "id": 1003,
+    "code_name": "MaintainEffect",
+    "ability_name": "维持效果",
+    "ability_desc": "维持效果",
+    "asset_tags": [],
+    "cooldown_duration": 0,
+    "channel_duration": 0,
+    "ready_duration": 0,
+    "cast_range": -1,
+    "trigger_count": 1,
+    "ability_logic": {
+      "$type": "ALMaintainEffect",
+      "Param": {
+        "EffectParams": []
+      }
+    },
+    "cancel_ability_with_tags": [],
+    "block_ability_with_tags": [],
+    "activation_owned_tags": [],
+    "activation_required_tags": [],
+    "activation_blocked_tags": []
+  },
+  {
+    "id": 1004,
+    "code_name": "TriggerEffect",
+    "ability_name": "激发效果",
+    "ability_desc": "激发效果",
+    "asset_tags": [],
+    "cooldown_duration": 0,
+    "channel_duration": 0,
+    "ready_duration": 0,
+    "cast_range": -1,
+    "trigger_count": 1,
+    "ability_logic": {
+      "$type": "ALApplyEffect",
+      "Param": {
+        "EffectParams": []
+      }
+    },
+    "cancel_ability_with_tags": [],
+    "block_ability_with_tags": [],
+    "activation_owned_tags": [],
+    "activation_required_tags": [],
+    "activation_blocked_tags": []
+  }
+]

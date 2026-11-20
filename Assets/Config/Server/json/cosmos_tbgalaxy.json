@@ -1,0 +1,122 @@
+[
+  {
+    "id": 10000,
+    "code_name": "galaxy_mooneye",
+    "name": "月眼",
+    "desc": "单层的三星系统，可以应付各类情景",
+    "type": 0,
+    "icon_asset_id": "Icon_PresetGalaxy_1",
+    "setting": "C_PlayerGalaxyPreset_1",
+    "asset_tags": []
+  },
+  {
+    "id": 10001,
+    "code_name": "galaxy_snowman",
+    "name": "雪人",
+    "desc": "双层星系，在触发父子星响应上有优势",
+    "type": 0,
+    "icon_asset_id": "Icon_PresetGalaxy_2",
+    "setting": "C_PlayerGalaxyPreset_2",
+    "asset_tags": []
+  },
+  {
+    "id": 10002,
+    "code_name": "galaxy_polarization",
+    "name": "偏振",
+    "desc": "一根轨道上绑定有两个星球，可能有意想不到的效用",
+    "type": 0,
+    "icon_asset_id": "Icon_PresetGalaxy_3",
+    "setting": "C_PlayerGalaxyPreset_3",
+    "asset_tags": []
+  },
+  {
+    "id": 1,
+    "code_name": "sub_test1",
+    "name": "子星系一",
+    "desc": "子星系一",
+    "type": 3,
+    "icon_asset_id": "",
+    "setting": "C_SubGalaxyPreset_1",
+    "asset_tags": []
+  },
+  {
+    "id": 2,
+    "code_name": "sub_test2",
+    "name": "子星系二",
+    "desc": "子星系二",
+    "type": 3,
+    "icon_asset_id": "",
+    "setting": "C_SubGalaxyPreset_2",
+    "asset_tags": []
+  },
+  {
+    "id": 20001,
+    "code_name": "enemy_lone_sentry",
+    "name": "孤哨",
+    "desc": "孤立的哨兵星球，警惕着一切外来者",
+    "type": 2,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_1",
+    "asset_tags": []
+  },
+  {
+    "id": 20002,
+    "code_name": "enemy_twin_eclipse",
+    "name": "双蚀",
+    "desc": "两个星球组成的简单巡逻编队",
+    "type": 2,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_2",
+    "asset_tags": []
+  },
+  {
+    "id": 20003,
+    "code_name": "enemy_trifold",
+    "name": "三裂",
+    "desc": "三颗星球呈三角分布，互相支援",
+    "type": 2,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_3",
+    "asset_tags": []
+  },
+  {
+    "id": 20004,
+    "code_name": "enemy_stalker",
+    "name": "猎手",
+    "desc": "四星猎手编队，猎杀一切猎物",
+    "type": 1,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_4",
+    "asset_tags": []
+  },
+  {
+    "id": 20005,
+    "code_name": "enemy_bastion",
+    "name": "棱堡",
+    "desc": "五颗星球如棱镜折射般分布，分散又互相映照",
+    "type": 1,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_5",
+    "asset_tags": []
+  },
+  {
+    "id": 20006,
+    "code_name": "enemy_maelstrom",
+    "name": "涡旋",
+    "desc": "六颗星球在三条轨道上旋转，形成不可逃脱的漩涡",
+    "type": 1,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_6",
+    "asset_tags": []
+  },
+  {
+    "id": 20007,
+    "code_name": "enemy_skyweb",
+    "name": "天网",
+    "desc": "七颗星球编织成密不透风的星网",
+    "type": 2,
+    "icon_asset_id": "",
+    "setting": "C_EnemyGalaxyPreset_7",
+    "asset_tags": []
+  }
+]

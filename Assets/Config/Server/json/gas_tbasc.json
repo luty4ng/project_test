@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "code_name": "planet",
+    "name": "星球",
+    "tag": [],
+    "attr_set": [
+      "PlanetAS",
+      "AbilityCastableAS",
+      "TradableAS"
+    ],
+    "ability": []
+  },
+  {
+    "id": 2,
+    "code_name": "orbit",
+    "name": "轨道",
+    "tag": [],
+    "attr_set": [
+      "OrbitAS",
+      "TradableAS"
+    ],
+    "ability": []
+  },
+  {
+    "id": 3,
+    "code_name": "item",
+    "name": "物品",
+    "tag": [],
+    "attr_set": [
+      "TradableAS"
+    ],
+    "ability": []
+  },
+  {
+    "id": 4,
+    "code_name": "building",
+    "name": "建筑",
+    "tag": [],
+    "attr_set": [
+      "BuildingAS",
+      "AbilityCastableAS",
+      "TradableAS"
+    ],
+    "ability": []
+  },
+  {
+    "id": 5,
+    "code_name": "galaxy",
+    "name": "星系",
+    "tag": [],
+    "attr_set": [
+      "GalaxyAS",
+      "TradableAS"
+    ],
+    "ability": []
+  }
+]

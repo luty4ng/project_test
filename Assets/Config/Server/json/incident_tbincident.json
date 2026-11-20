@@ -1,0 +1,144 @@
+[
+  {
+    "id": 10001,
+    "code_name": "RandomContact",
+    "title_abs": "发现某派系星系",
+    "dsec_abs": "检测到某派系星系信号，点击接触",
+    "title": "",
+    "desc": "",
+    "must_response": false,
+    "incident_logic": {
+      "$type": "GILogicContact"
+    },
+    "option_list": [
+      {
+        "displayText": "突袭",
+        "callbackLogic": {
+          "$type": "GIOLogicContactRaid"
+        },
+        "requiredTags": [],
+        "forbiddenTags": [],
+        "addTagsOnSelect": [],
+        "removeTagsOnSelect": []
+      }
+    ]
+  },
+  {
+    "id": 10002,
+    "code_name": "DiscorverRuins",
+    "title_abs": "发现游离星",
+    "dsec_abs": "检测到游离星信号，可回收资源",
+    "title": "",
+    "desc": "",
+    "must_response": false,
+    "incident_logic": {
+      "$type": "GILogicRecycle",
+      "TargetTypes": {
+        "EntityTypes": [
+          4
+        ]
+      }
+    },
+    "option_list": []
+  },
+  {
+    "id": 10003,
+    "code_name": "OptionalRecycle",
+    "title_abs": "选择性回收",
+    "dsec_abs": "选择性回收",
+    "title": "选择性回收",
+    "desc": "选择性回收",
+    "must_response": false,
+    "incident_logic": {
+      "$type": "GILogicRecycle",
+      "TargetTypes": {
+        "EntityTypes": [
+          3
+        ]
+      }
+    },
+    "option_list": []
+  },
+  {
+    "id": 10004,
+    "code_name": "UpgradeBuilding",
+    "title_abs": "升级建筑",
+    "dsec_abs": "升级建筑",
+    "title": "升级建筑",
+    "desc": "升级建筑",
+    "must_response": false,
+    "incident_logic": {
+      "$type": "GILogicUpgradeBuilding"
+    },
+    "option_list": []
+  },
+  {
+    "id": 10005,
+    "code_name": "ConvertToPlanet",
+    "title_abs": "星球发展",
+    "dsec_abs": "星球发展",
+    "title": "星球发展",
+    "desc": "星球发展",
+    "must_response": false,
+    "incident_logic": {
+      "$type": "GILogicDevelopPlanet"
+    },
+    "option_list": []
+  },
+  {
+    "id": 10006,
+    "code_name": "PlanetOrBuilding",
+    "title_abs": "建筑或星球",
+    "dsec_abs": "建筑或星球",
+    "title": "建筑或星球",
+    "desc": "建筑或星球",
+    "must_response": false,
+    "incident_logic": {
+      "$type": "GILogicChoose"
+    },
+    "option_list": [
+      {
+        "displayText": "导弹",
+        "callbackLogic": {
+          "$type": "GIOLogicGetContent",
+          "ContentId": {
+            "EntityType": 3,
+            "CodeName": "bd_regular_tower"
+          }
+        },
+        "requiredTags": [],
+        "forbiddenTags": [],
+        "addTagsOnSelect": [],
+        "removeTagsOnSelect": []
+      },
+      {
+        "displayText": "星球",
+        "callbackLogic": {
+          "$type": "GIOLogicGetContent",
+          "ContentId": {
+            "EntityType": 4,
+            "CodeName": "planet_roaming"
+          }
+        },
+        "requiredTags": [],
+        "forbiddenTags": [],
+        "addTagsOnSelect": [],
+        "removeTagsOnSelect": []
+      },
+      {
+        "displayText": "轨道",
+        "callbackLogic": {
+          "$type": "GIOLogicGetContent",
+          "ContentId": {
+            "EntityType": 2,
+            "CodeName": "o_normal"
+          }
+        },
+        "requiredTags": [],
+        "forbiddenTags": [],
+        "addTagsOnSelect": [],
+        "removeTagsOnSelect": []
+      }
+    ]
+  }
+]

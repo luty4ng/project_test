@@ -1,0 +1,1106 @@
+[
+  {
+    "id": 1001,
+    "code_name": "effect_recharge",
+    "name": "引导充能",
+    "desc": "引导充能",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          11
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 1002,
+    "code_name": "effect_accelerate",
+    "name": "引导加速",
+    "desc": "引导加速",
+    "duration_type": 0,
+    "duration": 2,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          10
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 3,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 1003,
+    "code_name": "effect_decelerate",
+    "name": "引导减速",
+    "desc": "引导减速",
+    "duration_type": 0,
+    "duration": 2,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          10
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 3,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 1004,
+    "code_name": "effect_reduction",
+    "name": "引导缩减",
+    "desc": "引导缩减",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          12
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 1005,
+    "code_name": "effect_reduction_p",
+    "name": "引导永久缩减",
+    "desc": "引导永久缩减",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          12
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2001,
+    "code_name": "effect_Invincible",
+    "name": "无敌",
+    "desc": "无敌",
+    "duration_type": 0,
+    "duration": 2,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 3,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.Invincible"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2002,
+    "code_name": "effect_freeze",
+    "name": "冻结",
+    "desc": "冻结",
+    "duration_type": 0,
+    "duration": 2,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 3,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.Frozen"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2003,
+    "code_name": "effect_meltdown",
+    "name": "熔断",
+    "desc": "熔断",
+    "duration_type": 0,
+    "duration": 2,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 3,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.Meltdown"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2004,
+    "code_name": "effect_blockout",
+    "name": "黑照",
+    "desc": "黑照",
+    "duration_type": 0,
+    "duration": 2,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 3,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2005,
+    "code_name": "effect_fold_immune",
+    "name": "折叠免疫",
+    "desc": "免疫折叠的负面效果",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.FoldImmune"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2006,
+    "code_name": "effect_price",
+    "name": "价值调整",
+    "desc": "价值调整",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          23
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2007,
+    "code_name": "effect_maxHp_p",
+    "name": "永久血量上限",
+    "desc": "永久血量上限",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          1
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3001,
+    "code_name": "effect_damage",
+    "name": "伤害",
+    "desc": "伤害",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "ge_logic": {
+      "$type": "GEDamage",
+      "Value": 0
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3002,
+    "code_name": "effect_burn",
+    "name": "燃烧",
+    "desc": "燃烧",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0.5,
+    "modifiers": [],
+    "stack_rule": 1,
+    "max_stack": 999999,
+    "granted_tags": [],
+    "ge_logic": {
+      "$type": "GEBurn",
+      "Value": 0
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3003,
+    "code_name": "effect_toxic",
+    "name": "中毒",
+    "desc": "中毒",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0.5,
+    "modifiers": [],
+    "stack_rule": 1,
+    "max_stack": 999999,
+    "granted_tags": [],
+    "ge_logic": {
+      "$type": "GEPoison",
+      "Value": 0
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3004,
+    "code_name": "effect_recover",
+    "name": "恢复",
+    "desc": "恢复",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "ge_logic": {
+      "$type": "GERecover",
+      "Value": 0
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3005,
+    "code_name": "effect_shield",
+    "name": "护盾",
+    "desc": "护盾",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "ge_logic": {
+      "$type": "GEShield",
+      "Value": 0
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3006,
+    "code_name": "effect_burn_power",
+    "name": "灼烧威力",
+    "desc": "灼烧威力",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          25
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3007,
+    "code_name": "effect_toxic_power",
+    "name": "毒性威力",
+    "desc": "毒性威力",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          26
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3008,
+    "code_name": "effect_regular_power",
+    "name": "常规威力",
+    "desc": "常规威力",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          24
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3009,
+    "code_name": "effect_shield_power",
+    "name": "护盾威力",
+    "desc": "护盾威力",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          29
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3010,
+    "code_name": "effect_recover_power",
+    "name": "恢复威力",
+    "desc": "恢复威力",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          28
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3011,
+    "code_name": "effect_trigger_count",
+    "name": "触发次数",
+    "desc": "触发次数",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          31
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 1,
+    "max_stack": 999999,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3012,
+    "code_name": "effect_regular_power_p",
+    "name": "永久常规威力",
+    "desc": "永久常规威力",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          24
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3013,
+    "code_name": "effect_burn_power_p",
+    "name": "永久灼烧威力",
+    "desc": "永久灼烧威力",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          25
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3014,
+    "code_name": "effect_toxic_power_p",
+    "name": "永久毒性威力",
+    "desc": "永久毒性威力",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          26
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3015,
+    "code_name": "effect_recover_power_p",
+    "name": "永久恢复威力",
+    "desc": "永久恢复威力",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          28
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3016,
+    "code_name": "effect_shield_power_p",
+    "name": "永久护盾威力",
+    "desc": "永久护盾威力",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          29
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 3017,
+    "code_name": "effect_trigger_count_p",
+    "name": "永久触发次数",
+    "desc": "永久触发次数",
+    "duration_type": 2,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCBaseScaleble",
+        "Attributes": [
+          31
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 4001,
+    "code_name": "effect_radius",
+    "name": "半径",
+    "desc": "半径",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          32
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 4002,
+    "code_name": "effect_mass",
+    "name": "质量",
+    "desc": "质量改动",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          34
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 4003,
+    "code_name": "effect_orbit_speed",
+    "name": "公转速",
+    "desc": "公转速",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          5
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 4005,
+    "code_name": "effect_focal_distance",
+    "name": "焦距",
+    "desc": "焦距",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          33
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 4006,
+    "code_name": "effect_abnormal",
+    "name": "异常",
+    "desc": "异常",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          37
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 4007,
+    "code_name": "effect_grav_slingshot",
+    "name": "引力弹弓",
+    "desc": "此物体在近日点的移动速度比远日点更快",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 5001,
+    "code_name": "effect_burn_to_regular",
+    "name": "灼同规",
+    "desc": "灼影规",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          24
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "ge_logic": {
+      "$type": "GEAttrSyncValue",
+      "Source": 25
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 5002,
+    "code_name": "efftec_chd_to_chd",
+    "name": "引导时长同步",
+    "desc": "引导时长同步",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCFinalOverride",
+        "Attributes": [
+          12
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "ge_logic": {
+      "$type": "GEAttrSyncValue",
+      "Source": 12
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 5003,
+    "code_name": "effect_burn_integrate_recover",
+    "name": "灼集恢",
+    "desc": "灼集恢",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [
+      {
+        "Mmc": "MMCScalableFloat",
+        "Attributes": [
+          28
+        ],
+        "MMCParam": {
+          "ParamMap": []
+        }
+      }
+    ],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "ge_logic": {
+      "$type": "GEAttrIntegrateValue",
+      "Sources": [
+        25
+      ]
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 1,
+    "code_name": "effect_attr_sync",
+    "name": "属性同步到目标",
+    "desc": "属性同步",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "ge_logic": {
+      "$type": "GEAttrSyncValue",
+      "Source": 10
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  },
+  {
+    "id": 2,
+    "code_name": "effect_attr_integrate",
+    "name": "属性集成到目标",
+    "desc": "属性集成",
+    "duration_type": 1,
+    "duration": -1,
+    "interval": 0,
+    "modifiers": [],
+    "stack_rule": 2,
+    "max_stack": 1,
+    "granted_tags": [
+      "Effect.DontDisplay"
+    ],
+    "ge_logic": {
+      "$type": "GEAttrIntegrateValue",
+      "Sources": [
+        10
+      ]
+    },
+    "icon_asset": "",
+    "asset_tags": [],
+    "application_required_tags": [],
+    "ongoing_required_tags": [],
+    "remove_effects_with_tags": [],
+    "immunity_tags": []
+  }
+]

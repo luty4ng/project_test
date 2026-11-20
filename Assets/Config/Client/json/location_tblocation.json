@@ -1,0 +1,267 @@
+[
+  {
+    "id": 10001,
+    "code_name": "lc_normal",
+    "name": "平原",
+    "desc": "放在此处的建筑，获得恢复威力 +2",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_recover_power",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                2
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10002,
+    "code_name": "lc_grassland",
+    "name": "静滞遗址",
+    "desc": "放在此处的建筑，不能主动激发，但触发次数 +1",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_trigger_count",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                1
+              ]
+            ]
+          },
+          {
+            "EffectID": "effect_meltdown",
+            "EffectParamMap": [
+              [
+                "Param.GE.Duration",
+                999
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10003,
+    "code_name": "lc_rock_land",
+    "name": "盖格平原",
+    "desc": "放在此处的建筑，获得腐蚀威力+5",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_toxic_power",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10004,
+    "code_name": "lc_ocean",
+    "name": "平流铸造台",
+    "desc": "此地点无建筑时，左侧地点建筑冷却-50%",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasEmptyBuilding",
+    "target_strategy": "TSLeftNearBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_reduction",
+            "EffectParamMap": [
+              [
+                "Param.MMC.K",
+                0.5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10005,
+    "code_name": "lc_dune",
+    "name": "受洗林",
+    "desc": "星球受到的第一下损伤值，会临时增加到此地点建筑的常规威力上",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLFirstDamageBoost"
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10006,
+    "code_name": "lc_oasis",
+    "name": "镜像山",
+    "desc": "放在此处的建筑，获得最左侧地点上建筑相同的引导速度",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "efftec_chd_to_chd",
+            "EffectParamMap": []
+          }
+        ],
+        "ObtainStrategy": "TSLeftMostBuilding"
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10007,
+    "code_name": "lc_golden_ocean",
+    "name": "黄金海洋",
+    "desc": "放在此处的建筑，每次释放时，价值增加 + 1",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLTriggerEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_price",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10008,
+    "code_name": "lc_blossom_zone",
+    "name": "桃花源",
+    "desc": "放在此处的建筑，灼烧威力加成在治疗威力",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_burn_integrate_recover",
+            "EffectParamMap": []
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10009,
+    "code_name": "lc_backroom",
+    "name": "后室",
+    "desc": "放在此处的建筑，在星球折叠时依然能释放",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_fold_immune",
+            "EffectParamMap": []
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10010,
+    "code_name": "lc_strange_lake",
+    "name": "怪湖",
+    "desc": "放在此处的建筑，每次战斗结束后，会转变为任意同评级物品",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSSelfBuilding",
+    "logic": {
+      "$type": "LLConvertRandomBuilding"
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10011,
+    "code_name": "lc_golden_tree_near",
+    "name": "黄金树脚",
+    "desc": "放在此处的建筑，每次释放时，获得 1 点能量币",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCLocationHasBuilding",
+    "target_strategy": "TSPlayerGalaxy",
+    "logic": {
+      "$type": "LLTriggerEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_price",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10012,
+    "code_name": "lc_wide_land",
+    "name": "广域平原",
+    "desc": "此星球获得 2 个 仓储槽位（暂未实现）",
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "",
+    "target_strategy": "",
+    "asset_tags": []
+  }
+]

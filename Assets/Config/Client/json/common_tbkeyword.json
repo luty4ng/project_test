@@ -1,0 +1,90 @@
+[
+  {
+    "id": 10001,
+    "code_name": "Param.MMC.TargetAttr"
+  },
+  {
+    "id": 10002,
+    "code_name": "Param.MMC.K"
+  },
+  {
+    "id": 10003,
+    "code_name": "Param.MMC.B"
+  },
+  {
+    "id": 10004,
+    "code_name": "Param.MMC.Override"
+  },
+  {
+    "id": 10005,
+    "code_name": "Param.MMC.Value"
+  },
+  {
+    "id": 10006,
+    "code_name": "Param.MMC.FinalMultipy"
+  },
+  {
+    "id": 20001,
+    "code_name": "Param.GE.Damage"
+  },
+  {
+    "id": 20002,
+    "code_name": "Param.GE.Time"
+  },
+  {
+    "id": 20003,
+    "code_name": "Param.GE.Duration"
+  },
+  {
+    "id": 20004,
+    "code_name": "Param.GE.Interval"
+  },
+  {
+    "id": 20005,
+    "code_name": "Param.GE.DamageMode"
+  },
+  {
+    "id": 20006,
+    "code_name": "Param.GE.BurnDamage"
+  },
+  {
+    "id": 20007,
+    "code_name": "Param.GE.ToxicDamage"
+  },
+  {
+    "id": 20008,
+    "code_name": "Param.GE.RecoverAmount"
+  },
+  {
+    "id": 20009,
+    "code_name": "Param.GE.ShieldAmount"
+  },
+  {
+    "id": 20010,
+    "code_name": "Param.GE.BonusK"
+  },
+  {
+    "id": 20011,
+    "code_name": "Param.GE.BonusB"
+  },
+  {
+    "id": 30002,
+    "code_name": "Param.Ability.ChannelDuration"
+  },
+  {
+    "id": 30004,
+    "code_name": "Param.Ability.CastRange"
+  },
+  {
+    "id": 30005,
+    "code_name": "Param.Ability.TriggerCount"
+  },
+  {
+    "id": 30006,
+    "code_name": "Param.Ability.TriggerEvent"
+  },
+  {
+    "id": 30007,
+    "code_name": "Param.Ability.TriggerCondition"
+  }
+]
