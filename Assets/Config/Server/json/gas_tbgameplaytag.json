@@ -1,0 +1,87 @@
+[
+  {
+    "id": 100,
+    "code_name": "Faction",
+    "desc": "阵营描述标签"
+  },
+  {
+    "id": 1001,
+    "code_name": "Faction.Player",
+    "desc": "玩家阵营"
+  },
+  {
+    "id": 1002,
+    "code_name": "Faction.NonPlayer",
+    "desc": "非玩家阵营"
+  },
+  {
+    "id": 1003,
+    "code_name": "Faction.NonPlayer.Enemy",
+    "desc": "敌人阵营"
+  },
+  {
+    "id": 200,
+    "code_name": "Ability",
+    "desc": "技能"
+  },
+  {
+    "id": 2008,
+    "code_name": "Ability.Type.Active",
+    "desc": "主动能力"
+  },
+  {
+    "id": 2009,
+    "code_name": "Ability.Type.Passive",
+    "desc": "被动能力"
+  },
+  {
+    "id": 400,
+    "code_name": "Effect",
+    "desc": "状态"
+  },
+  {
+    "id": 4001,
+    "code_name": "Effect.DontDisplay",
+    "desc": "状态：不显示"
+  },
+  {
+    "id": 4002,
+    "code_name": "Effect.DontRestoreAfterBattle",
+    "desc": "状态：战斗后不清理"
+  },
+  {
+    "id": 4003,
+    "code_name": "Effect.Meltdown",
+    "desc": "状态：熔断"
+  },
+  {
+    "id": 4004,
+    "code_name": "Effect.Frozen",
+    "desc": "状态：冻结"
+  },
+  {
+    "id": 4005,
+    "code_name": "Effect.Invincible",
+    "desc": "状态：无敌"
+  },
+  {
+    "id": 4006,
+    "code_name": "Effect.FoldImmune",
+    "desc": "状态：折叠免疫"
+  },
+  {
+    "id": 500,
+    "code_name": "Status",
+    "desc": "状态"
+  },
+  {
+    "id": 5001,
+    "code_name": "Status.Planet",
+    "desc": "星球状态"
+  },
+  {
+    "id": 5001001,
+    "code_name": "Status.Planet.RecycleLossFree",
+    "desc": "星球状态：回收无损失"
+  }
+]

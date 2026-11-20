@@ -1,0 +1,404 @@
+[
+  {
+    "id": 1,
+    "code_name": "complete_hostile",
+    "name": "完全敌对",
+    "desc": "所有派系之间都互相敌对",
+    "relation": [
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_uncertain",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_purger",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_connector",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_recycler",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_believer",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_exile",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_purger",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_connector",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_recycler",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_believer",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_exile",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_connector",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_recycler",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_believer",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_exile",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_recycler",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_believer",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_exile",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_recycler",
+        "factionB": "faction_believer",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_recycler",
+        "factionB": "faction_exile",
+        "relationValue": -100,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_believer",
+        "factionB": "faction_exile",
+        "relationValue": -100,
+        "relationStatus": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "code_name": "order_coalition",
+    "name": "秩序同盟",
+    "desc": "玩家开局即与 联系者+回收者 组成贸易同盟，共同对抗 肃清者+虔诚者 的神权轴心。派系关系分明，适合想体验阵营对抗和基地经营的玩家。",
+    "relation": [
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_uncertain",
+        "relationValue": 40,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_purger",
+        "relationValue": -80,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_connector",
+        "relationValue": 80,
+        "relationStatus": 2
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_recycler",
+        "relationValue": 60,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_believer",
+        "relationValue": 40,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_exile",
+        "relationValue": -60,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_purger",
+        "relationValue": -20,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_connector",
+        "relationValue": 60,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_recycler",
+        "relationValue": 40,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_believer",
+        "relationValue": 0,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_exile",
+        "relationValue": -20,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_connector",
+        "relationValue": -60,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_recycler",
+        "relationValue": -60,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_believer",
+        "relationValue": 80,
+        "relationStatus": 2
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_exile",
+        "relationValue": -90,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_recycler",
+        "relationValue": 70,
+        "relationStatus": 2
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_believer",
+        "relationValue": 0,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_exile",
+        "relationValue": -40,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_recycler",
+        "factionB": "faction_believer",
+        "relationValue": 0,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_recycler",
+        "factionB": "faction_exile",
+        "relationValue": -20,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_believer",
+        "factionB": "faction_exile",
+        "relationValue": -80,
+        "relationStatus": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "code_name": "shattered_accord",
+    "name": "破碎协定",
+    "desc": "肃清者-虔诚者（秩序轴心）与 联系者-回收者（商业同盟）处于冷战状态，而 流放者 与双方皆敌。玩家完全孤立，没有任何天然盟友，所有派系都在观望你的立场。适合想体验间谍活动、双面交易、在夹缝中求生存的玩家。",
+    "relation": [
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_uncertain",
+        "relationValue": 10,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_purger",
+        "relationValue": 10,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_connector",
+        "relationValue": 10,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_recycler",
+        "relationValue": 10,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_believer",
+        "relationValue": 10,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_player",
+        "factionB": "faction_exile",
+        "relationValue": -20,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_purger",
+        "relationValue": -20,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_connector",
+        "relationValue": 30,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_recycler",
+        "relationValue": 30,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_believer",
+        "relationValue": -10,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_uncertain",
+        "factionB": "faction_exile",
+        "relationValue": -30,
+        "relationStatus": 1
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_connector",
+        "relationValue": -70,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_recycler",
+        "relationValue": -70,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_believer",
+        "relationValue": 80,
+        "relationStatus": 2
+      },
+      {
+        "factionA": "faction_purger",
+        "factionB": "faction_exile",
+        "relationValue": -90,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_recycler",
+        "relationValue": 70,
+        "relationStatus": 2
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_believer",
+        "relationValue": -60,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_connector",
+        "factionB": "faction_exile",
+        "relationValue": -50,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_recycler",
+        "factionB": "faction_believer",
+        "relationValue": -60,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_recycler",
+        "factionB": "faction_exile",
+        "relationValue": -40,
+        "relationStatus": 0
+      },
+      {
+        "factionA": "faction_believer",
+        "factionB": "faction_exile",
+        "relationValue": -80,
+        "relationStatus": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "id": 10001,
+    "code_name": "planet_roaming",
+    "name": "游离星",
+    "desc": "此天体上的建筑每执行5次，此星球就会转移到距离其最近的轨道",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 1,
+    "mass": 15,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSSelf",
+    "logic": {
+      "$type": "PLOrbitJump"
+    },
+    "locations": [
+      "lc_grassland"
+    ],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_1",
+    "prefab": "P_Planet_1"
+  },
+  {
+    "id": 10002,
+    "code_name": "planet_celeste",
+    "name": "蔚蓝星",
+    "desc": "此天体子轨道上的天体，越靠近此天体，建筑引导速度越快，冷却速度越慢，反之亦然",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 2,
+    "mass": 5,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "",
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_2",
+    "prefab": "P_Planet_2"
+  },
+  {
+    "id": 10003,
+    "code_name": "planet_dust",
+    "name": "沙尘星",
+    "desc": "此天体折叠时，触发其上所有建筑一次",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 3,
+    "mass": 5,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSAllBuildingsOnPlanet",
+    "logic": {
+      "$type": "PLFoldTrigger"
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_3",
+    "prefab": "P_Planet_3"
+  },
+  {
+    "id": 10004,
+    "code_name": "planet_purplesmoke",
+    "name": "紫烟星",
+    "desc": "此天体上的建筑灼烧伤害+5，常规伤害 -5",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 1,
+    "mass": 15,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSAllBuildingsOnPlanet",
+    "logic": {
+      "$type": "PLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_burn_power",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                5
+              ]
+            ]
+          },
+          {
+            "EffectID": "effect_regular_power",
+            "EffectParamMap": [
+              [
+                "Param.MMC.B",
+                -5
+              ]
+            ]
+          }
+        ],
+        "ObtainStrategy": "TSSelf"
+      }
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_4",
+    "prefab": "P_Planet_4"
+  },
+  {
+    "id": 10005,
+    "code_name": "planet_bloodlust",
+    "name": "渴血星",
+    "desc": "此天体上的建筑造成直接伤害时，此天体恢复相当于伤害50%的生命值",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 3,
+    "mass": 15,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSAllBuildingsOnPlanet",
+    "logic": {
+      "$type": "PLDamageLeech"
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_5",
+    "prefab": "P_Planet_5"
+  },
+  {
+    "id": 10006,
+    "code_name": "planet_painting",
+    "name": "颜料星",
+    "desc": "每场战斗开始时，随机从灼烧、腐蚀、恢复、护盾威力中选取一个，给此星球上所有建筑添加3点",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 4,
+    "mass": 10,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSAllBuildingsOnPlanet",
+    "logic": {
+      "$type": "PLRandomPowerBoostOnBS"
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_6",
+    "prefab": "P_Planet_6"
+  },
+  {
+    "id": 10007,
+    "code_name": "planet_darkness",
+    "name": "至暗星",
+    "desc": "此星球在战斗开始10s内，此星球无法被选为攻击目标",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 2,
+    "mass": 10,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSSelf",
+    "logic": {
+      "$type": "PLBlockoutOnBS"
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_7",
+    "prefab": "P_Planet_7"
+  },
+  {
+    "id": 10008,
+    "code_name": "planet_runes",
+    "name": "符文星",
+    "desc": "此星球所有子星的所有建筑的触发次数减半，减少的数量增加到该星球最左侧的建筑上",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 1,
+    "mass": 10,
+    "abnormal": 20,
+    "capacity": 3,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSLeftMostBuilding",
+    "logic": {
+      "$type": "PLMaintainRedistribute",
+      "ObtainStrategy": "TSAllChildrenBuildings"
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_8",
+    "prefab": "P_Planet_8"
+  },
+  {
+    "id": 10009,
+    "code_name": "planet_recycle",
+    "name": "回收星",
+    "desc": "此星球回收没有能量损失",
+    "price": 8,
+    "hp": 50,
+    "radius": 0.5,
+    "speed": 1,
+    "mass": 10,
+    "abnormal": 20,
+    "capacity": 1,
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSSelf",
+    "logic": {
+      "$type": "PLRecycleFree"
+    },
+    "locations": [],
+    "asset_tags": [],
+    "icon_asset_id": "Icon_Planet_8",
+    "prefab": "P_Planet_9"
+  }
+]

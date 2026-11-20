@@ -1,0 +1,107 @@
+[
+  {
+    "progress": 1,
+    "copper_w": 100,
+    "silver_w": 0,
+    "gold_w": 0,
+    "diamond_w": 0
+  },
+  {
+    "progress": 2,
+    "copper_w": 90,
+    "silver_w": 10,
+    "gold_w": 0,
+    "diamond_w": 0
+  },
+  {
+    "progress": 3,
+    "copper_w": 80,
+    "silver_w": 20,
+    "gold_w": 0,
+    "diamond_w": 0
+  },
+  {
+    "progress": 4,
+    "copper_w": 70,
+    "silver_w": 30,
+    "gold_w": 0,
+    "diamond_w": 0
+  },
+  {
+    "progress": 5,
+    "copper_w": 55,
+    "silver_w": 40,
+    "gold_w": 5,
+    "diamond_w": 0
+  },
+  {
+    "progress": 6,
+    "copper_w": 40,
+    "silver_w": 50,
+    "gold_w": 10,
+    "diamond_w": 0
+  },
+  {
+    "progress": 7,
+    "copper_w": 30,
+    "silver_w": 50,
+    "gold_w": 20,
+    "diamond_w": 0
+  },
+  {
+    "progress": 8,
+    "copper_w": 25,
+    "silver_w": 45,
+    "gold_w": 30,
+    "diamond_w": 0
+  },
+  {
+    "progress": 9,
+    "copper_w": 10,
+    "silver_w": 40,
+    "gold_w": 40,
+    "diamond_w": 10
+  },
+  {
+    "progress": 10,
+    "copper_w": 0,
+    "silver_w": 30,
+    "gold_w": 50,
+    "diamond_w": 20
+  },
+  {
+    "progress": 11,
+    "copper_w": 0,
+    "silver_w": 30,
+    "gold_w": 50,
+    "diamond_w": 20
+  },
+  {
+    "progress": 12,
+    "copper_w": 0,
+    "silver_w": 30,
+    "gold_w": 50,
+    "diamond_w": 20
+  },
+  {
+    "progress": 13,
+    "copper_w": 0,
+    "silver_w": 30,
+    "gold_w": 50,
+    "diamond_w": 20
+  },
+  {
+    "progress": 14,
+    "copper_w": 0,
+    "silver_w": 30,
+    "gold_w": 50,
+    "diamond_w": 20
+  },
+  {
+    "progress": 15,
+    "copper_w": 0,
+    "silver_w": 30,
+    "gold_w": 50,
+    "diamond_w": 20
+  }
+]

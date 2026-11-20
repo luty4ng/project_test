@@ -1,0 +1,48 @@
+[
+  {
+    "id": 10001,
+    "code_name": "MockItem1",
+    "name": "模拟物品1",
+    "description": "模拟物品1描述",
+    "category": [
+      1
+    ],
+    "use_target": [
+      2
+    ],
+    "grade": 0,
+    "price": 6,
+    "max_stack": 1,
+    "override_Effect": [],
+    "asset_tags": [],
+    "icon_asset_id": ""
+  },
+  {
+    "id": 10002,
+    "code_name": "MockItem2",
+    "name": "模拟物品2",
+    "description": "模拟物品2描述",
+    "category": [],
+    "use_target": [],
+    "grade": 0,
+    "price": 12,
+    "max_stack": 1,
+    "override_Effect": [],
+    "asset_tags": [],
+    "icon_asset_id": ""
+  },
+  {
+    "id": 10003,
+    "code_name": "MockItem3",
+    "name": "模拟物品3",
+    "description": "模拟物品3描述",
+    "category": [],
+    "use_target": [],
+    "grade": 0,
+    "price": 18,
+    "max_stack": 1,
+    "override_Effect": [],
+    "asset_tags": [],
+    "icon_asset_id": ""
+  }
+]

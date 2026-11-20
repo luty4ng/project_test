@@ -1,0 +1,166 @@
+[
+  {
+    "id": 10001,
+    "code_name": "o_normal",
+    "name": "恢复轨道",
+    "desc": "此轨道上的星球折叠恢复时间 -20%",
+    "price": 2,
+    "min_radius": 3,
+    "max_radius": 4,
+    "capacity": 1,
+    "focal_distance": 0,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSOnOrbitPlanet",
+    "logic": {
+      "$type": "OLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_mass",
+            "EffectParamMap": [
+              [
+                "Param.MMC.K",
+                0.8
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10002,
+    "code_name": "o_highway",
+    "name": "高速轨道",
+    "desc": "此轨道上的星球公转速度 +50%",
+    "price": 2,
+    "min_radius": 4,
+    "max_radius": 5,
+    "capacity": 1,
+    "focal_distance": 0,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_MissleStation",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSOnOrbitPlanet",
+    "logic": {
+      "$type": "OLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_orbit_speed",
+            "EffectParamMap": [
+              [
+                "Param.MMC.K",
+                1.5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10003,
+    "code_name": "o_expansion",
+    "name": "扩容轨道",
+    "desc": "能够容纳更多星球的轨道",
+    "price": 4,
+    "min_radius": 5,
+    "max_radius": 8,
+    "capacity": 3,
+    "focal_distance": 0,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_HeatRayTower",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSSelf",
+    "asset_tags": []
+  },
+  {
+    "id": 10004,
+    "code_name": "o_reject",
+    "name": "排斥轨道",
+    "desc": "此轨道上的星球，折叠后会转移到距离其最近的轨道",
+    "price": 8,
+    "min_radius": 5,
+    "max_radius": 8,
+    "capacity": 2,
+    "focal_distance": 0,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_LaserGroup",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSOnOrbitPlanet",
+    "logic": {
+      "$type": "OLFoldTransfer"
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10005,
+    "code_name": "o_quantum",
+    "name": "量子轨道",
+    "desc": "此轨道的主星折叠时，此轨道会转移到距离其最近的非折叠星球上",
+    "price": 8,
+    "min_radius": 5,
+    "max_radius": 8,
+    "capacity": 2,
+    "focal_distance": 0,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_EjectStation",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSParentPlanet",
+    "logic": {
+      "$type": "OLQuantumTransfer"
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10006,
+    "code_name": "o_shrink",
+    "name": "渐缩轨道",
+    "desc": "此轨道的主星的建筑释放时，此轨道半径会缩小0.25",
+    "price": 8,
+    "min_radius": 5,
+    "max_radius": 8,
+    "capacity": 1,
+    "focal_distance": 0,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSParentPlanet",
+    "logic": {
+      "$type": "OLBuildingCastShrink"
+    },
+    "asset_tags": []
+  },
+  {
+    "id": 10007,
+    "code_name": "o_offset",
+    "name": "偏移轨道",
+    "desc": "此轨道上的星球，在近日点的移动速度比远日点更快",
+    "price": 6,
+    "min_radius": 1,
+    "max_radius": 12,
+    "capacity": 1,
+    "focal_distance": 3,
+    "focal_dir_inner": false,
+    "icon_asset_id": "Icon_JumpActivator",
+    "condition": "TCAlwaysTrue",
+    "target_strategy": "TSOnOrbitPlanet",
+    "logic": {
+      "$type": "OLMaintainEffect",
+      "Effects": {
+        "EffectParams": [
+          {
+            "EffectID": "effect_grav_slingshot",
+            "EffectParamMap": []
+          }
+        ]
+      }
+    },
+    "asset_tags": []
+  }
+]

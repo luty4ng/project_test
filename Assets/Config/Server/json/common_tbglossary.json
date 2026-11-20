@@ -1,0 +1,50 @@
+[
+  {
+    "id": 10001,
+    "code_name": "SpeedUp",
+    "displayName": "加速",
+    "desc": "使计时过程的速率翻倍",
+    "icon": 0,
+    "related_keywords": []
+  },
+  {
+    "id": 10002,
+    "code_name": "SpeedDown",
+    "displayName": "减速",
+    "desc": "使计时过程的速率减倍",
+    "icon": 0,
+    "related_keywords": []
+  },
+  {
+    "id": 10003,
+    "code_name": "Charge",
+    "displayName": "充能",
+    "desc": "使计时过程的剩余时间减少",
+    "icon": 0,
+    "related_keywords": []
+  },
+  {
+    "id": 10004,
+    "code_name": "Reduction",
+    "displayName": "缩减",
+    "desc": "使计时过程的总时间减少",
+    "icon": 0,
+    "related_keywords": []
+  },
+  {
+    "id": 10005,
+    "code_name": "Overheat",
+    "displayName": "过热",
+    "desc": "受到持续伤害",
+    "icon": 0,
+    "related_keywords": []
+  },
+  {
+    "id": 10006,
+    "code_name": "Freeze",
+    "displayName": "冻结",
+    "desc": "使计时过程暂停",
+    "icon": 0,
+    "related_keywords": []
+  }
+]

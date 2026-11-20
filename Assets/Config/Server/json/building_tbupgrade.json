@@ -1,0 +1,53 @@
+[
+  {
+    "id": 10001,
+    "building_code_name": "bd_fire_clicker",
+    "upgrade_effect": [
+      [
+        2,
+        {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power_1",
+              "EffectParamMap": []
+            },
+            {
+              "EffectID": "Param.MMC.B;4",
+              "EffectParamMap": []
+            }
+          ]
+        }
+      ],
+      [
+        3,
+        {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power_1",
+              "EffectParamMap": []
+            },
+            {
+              "EffectID": "Param.MMC.B;4",
+              "EffectParamMap": []
+            }
+          ]
+        }
+      ],
+      [
+        4,
+        {
+          "EffectParams": [
+            {
+              "EffectID": "effect_burn_power_1",
+              "EffectParamMap": []
+            },
+            {
+              "EffectID": "Param.MMC.B;4",
+              "EffectParamMap": []
+            }
+          ]
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1001,
+    "code_name": "MMCFinalOverride",
+    "mmc_logic": {
+      "$type": "MMCFinalOverride",
+      "Value": 0
+    }
+  },
+  {
+    "id": 1002,
+    "code_name": "MMCFinalMulitipy",
+    "mmc_logic": {
+      "$type": "MMCFinalMulitipy",
+      "Value": 1
+    }
+  },
+  {
+    "id": 1003,
+    "code_name": "MMCScalableFloat",
+    "mmc_logic": {
+      "$type": "MMCScalableFloat",
+      "KBValue": {
+        "K": 1,
+        "B": 0
+      }
+    }
+  },
+  {
+    "id": 1004,
+    "code_name": "MMCBaseOverride",
+    "mmc_logic": {
+      "$type": "MMCBaseOverride",
+      "Value": 0
+    }
+  },
+  {
+    "id": 1005,
+    "code_name": "MMCBaseScaleble",
+    "mmc_logic": {
+      "$type": "MMCBaseScaleble",
+      "KBValue": {
+        "K": 1,
+        "B": 0
+      }
+    }
+  }
+]
