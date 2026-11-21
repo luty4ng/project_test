@@ -1,0 +1,17 @@
+[
+  {
+    "id": 2,
+    "next_id": 2,
+    "must_response": false
+  },
+  {
+    "id": 1,
+    "next_id": 1,
+    "must_response": true
+  },
+  {
+    "id": 3,
+    "next_id": 2,
+    "must_response": false
+  }
+]
