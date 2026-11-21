@@ -387,7 +387,7 @@
   {
     "id": 10008,
     "code_name": "bd_fire_canno",
-    "name": "连射火炮aAA",
+    "name": "连射火炮",
     "desc": "发射造成 3 点灼烧伤害的射弹",
     "category": [
       1
