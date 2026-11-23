@@ -22,8 +22,8 @@ public sealed partial class Effect : Luban.BeanBase
         { if(!_buf["name"].IsString) { throw new SerializationException(); }  Name = _buf["name"]; }
         { if(!_buf["desc"].IsString) { throw new SerializationException(); }  Desc = _buf["desc"]; }
         { if(!_buf["duration_type"].IsNumber) { throw new SerializationException(); }  DurationType = (gas.EDurationType)_buf["duration_type"].AsInt; }
-        { if(!_buf["duration"].IsNumber) { throw new SerializationException(); }  Duration = _buf["duration"]; }
-        { if(!_buf["interval"].IsNumber) { throw new SerializationException(); }  Interval = _buf["interval"]; }
+        { var _j = _buf["duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Duration = _j; } } else { Duration = null; } }
+        { var _j = _buf["interval"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Interval = _j; } } else { Interval = null; } }
         { var __json0 = _buf["modifiers"]; if(!__json0.IsArray) { throw new SerializationException(); } Modifiers = new System.Collections.Generic.List<gas.Modifier>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { gas.Modifier __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = global::GameConfig.gas.Modifier.DeserializeModifier(__e0);  }  Modifiers.Add(__v0); }   }
         { if(!_buf["stack_rule"].IsNumber) { throw new SerializationException(); }  StackRule = (gas.EStackRule)_buf["stack_rule"].AsInt; }
         { if(!_buf["max_stack"].IsNumber) { throw new SerializationException(); }  MaxStack = _buf["max_stack"]; }
@@ -65,11 +65,11 @@ public sealed partial class Effect : Luban.BeanBase
     /// <summary>
     /// 默认持续数值(秒)
     /// </summary>
-    public readonly float Duration;
+    public readonly float? Duration;
     /// <summary>
     /// 效果间隔
     /// </summary>
-    public readonly float Interval;
+    public readonly float? Interval;
     /// <summary>
     /// 修改器
     /// </summary>

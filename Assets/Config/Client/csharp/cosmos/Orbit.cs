@@ -22,10 +22,10 @@ public sealed partial class Orbit : Luban.BeanBase
         { if(!_buf["name"].IsString) { throw new SerializationException(); }  Name = _buf["name"]; }
         { if(!_buf["desc"].IsString) { throw new SerializationException(); }  Desc = _buf["desc"]; }
         { if(!_buf["price"].IsNumber) { throw new SerializationException(); }  Price = _buf["price"]; }
-        { if(!_buf["min_radius"].IsNumber) { throw new SerializationException(); }  MinRadius = _buf["min_radius"]; }
-        { if(!_buf["max_radius"].IsNumber) { throw new SerializationException(); }  MaxRadius = _buf["max_radius"]; }
+        { var _j = _buf["min_radius"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  MinRadius = _j; } } else { MinRadius = null; } }
+        { var _j = _buf["max_radius"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  MaxRadius = _j; } } else { MaxRadius = null; } }
         { if(!_buf["capacity"].IsNumber) { throw new SerializationException(); }  Capacity = _buf["capacity"]; }
-        { if(!_buf["focal_distance"].IsNumber) { throw new SerializationException(); }  FocalDistance = _buf["focal_distance"]; }
+        { var _j = _buf["focal_distance"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  FocalDistance = _j; } } else { FocalDistance = null; } }
         { if(!_buf["focal_dir_inner"].IsBoolean) { throw new SerializationException(); }  FocalDirInner = _buf["focal_dir_inner"]; }
         { if(!_buf["icon_asset_id"].IsString) { throw new SerializationException(); }  IconAssetId = _buf["icon_asset_id"]; }
         { if(!_buf["condition"].IsString) { throw new SerializationException(); }  Condition = _buf["condition"]; }
@@ -62,11 +62,11 @@ public sealed partial class Orbit : Luban.BeanBase
     /// <summary>
     /// 最小半径
     /// </summary>
-    public readonly float MinRadius;
+    public readonly float? MinRadius;
     /// <summary>
     /// 最大半径
     /// </summary>
-    public readonly float MaxRadius;
+    public readonly float? MaxRadius;
     /// <summary>
     /// 容量
     /// </summary>
@@ -74,7 +74,7 @@ public sealed partial class Orbit : Luban.BeanBase
     /// <summary>
     /// 焦距
     /// </summary>
-    public readonly float FocalDistance;
+    public readonly float? FocalDistance;
     /// <summary>
     /// 焦距方向是否朝内
     /// </summary>

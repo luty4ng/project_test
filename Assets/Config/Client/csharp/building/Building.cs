@@ -26,10 +26,10 @@ public sealed partial class Building : Luban.BeanBase
         { if(!_buf["allow_manual_targeting"].IsBoolean) { throw new SerializationException(); }  AllowManualTargeting = _buf["allow_manual_targeting"]; }
         { if(!_buf["mainTS"].IsString) { throw new SerializationException(); }  MainTS = _buf["mainTS"]; }
         { if(!_buf["secondaryTS"].IsString) { throw new SerializationException(); }  SecondaryTS = _buf["secondaryTS"]; }
-        { if(!_buf["cooldown_duration"].IsNumber) { throw new SerializationException(); }  CooldownDuration = _buf["cooldown_duration"]; }
-        { if(!_buf["channel_duration"].IsNumber) { throw new SerializationException(); }  ChannelDuration = _buf["channel_duration"]; }
-        { if(!_buf["ready_duration"].IsNumber) { throw new SerializationException(); }  ReadyDuration = _buf["ready_duration"]; }
-        { if(!_buf["range"].IsNumber) { throw new SerializationException(); }  Range = _buf["range"]; }
+        { var _j = _buf["cooldown_duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  CooldownDuration = _j; } } else { CooldownDuration = null; } }
+        { var _j = _buf["channel_duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  ChannelDuration = _j; } } else { ChannelDuration = null; } }
+        { var _j = _buf["ready_duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  ReadyDuration = _j; } } else { ReadyDuration = null; } }
+        { var _j = _buf["range"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Range = _j; } } else { Range = null; } }
         { if(!_buf["trigger_count"].IsNumber) { throw new SerializationException(); }  TriggerCount = _buf["trigger_count"]; }
         { var __json0 = _buf["trigger_events"]; if(!__json0.IsArray) { throw new SerializationException(); } TriggerEvents = new System.Collections.Generic.List<string>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { string __v0;  { if(!__e0.IsString) { throw new SerializationException(); }  __v0 = __e0; }  TriggerEvents.Add(__v0); }   }
         { if(!_buf["trigger_condition"].IsString) { throw new SerializationException(); }  TriggerCondition = _buf["trigger_condition"]; }
@@ -83,19 +83,19 @@ public sealed partial class Building : Luban.BeanBase
     /// <summary>
     /// 冷却时间
     /// </summary>
-    public readonly float CooldownDuration;
+    public readonly float? CooldownDuration;
     /// <summary>
     /// 引导时间
     /// </summary>
-    public readonly float ChannelDuration;
+    public readonly float? ChannelDuration;
     /// <summary>
     /// 待命时间
     /// </summary>
-    public readonly float ReadyDuration;
+    public readonly float? ReadyDuration;
     /// <summary>
     /// 施放范围
     /// </summary>
-    public readonly float Range;
+    public readonly float? Range;
     /// <summary>
     /// 触发数
     /// </summary>
