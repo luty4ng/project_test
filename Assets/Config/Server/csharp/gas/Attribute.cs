@@ -21,9 +21,9 @@ public sealed partial class Attribute : Luban.BeanBase
         { if(!_buf["code_name"].IsString) { throw new SerializationException(); }  CodeName = _buf["code_name"]; }
         { if(!_buf["name"].IsString) { throw new SerializationException(); }  Name = _buf["name"]; }
         { if(!_buf["attr_type"].IsNumber) { throw new SerializationException(); }  AttrType = (gas.EAttrType)_buf["attr_type"].AsInt; }
-        { if(!_buf["default_value"].IsNumber) { throw new SerializationException(); }  DefaultValue = _buf["default_value"]; }
-        { if(!_buf["min_value"].IsNumber) { throw new SerializationException(); }  MinValue = _buf["min_value"]; }
-        { if(!_buf["max_value"].IsNumber) { throw new SerializationException(); }  MaxValue = _buf["max_value"]; }
+        { var _j = _buf["default_value"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  DefaultValue = _j; } } else { DefaultValue = null; } }
+        { var _j = _buf["min_value"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  MinValue = _j; } } else { MinValue = null; } }
+        { var _j = _buf["max_value"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  MaxValue = _j; } } else { MaxValue = null; } }
         { if(!_buf["is_runtime_attr"].IsBoolean) { throw new SerializationException(); }  IsRuntimeAttr = _buf["is_runtime_attr"]; }
         { if(!_buf["visual_setting"].IsString) { throw new SerializationException(); }  VisualSetting = _buf["visual_setting"]; }
     }
@@ -52,15 +52,15 @@ public sealed partial class Attribute : Luban.BeanBase
     /// <summary>
     /// 默认值
     /// </summary>
-    public readonly float DefaultValue;
+    public readonly float? DefaultValue;
     /// <summary>
     /// 最小值
     /// </summary>
-    public readonly float MinValue;
+    public readonly float? MinValue;
     /// <summary>
     /// 最大值
     /// </summary>
-    public readonly float MaxValue;
+    public readonly float? MaxValue;
     /// <summary>
     /// 是否为运行时属性
     /// </summary>

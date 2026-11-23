@@ -23,9 +23,9 @@ public sealed partial class Planet : Luban.BeanBase
         { if(!_buf["desc"].IsString) { throw new SerializationException(); }  Desc = _buf["desc"]; }
         { if(!_buf["price"].IsNumber) { throw new SerializationException(); }  Price = _buf["price"]; }
         { if(!_buf["hp"].IsNumber) { throw new SerializationException(); }  Hp = _buf["hp"]; }
-        { if(!_buf["radius"].IsNumber) { throw new SerializationException(); }  Radius = _buf["radius"]; }
-        { if(!_buf["speed"].IsNumber) { throw new SerializationException(); }  Speed = _buf["speed"]; }
-        { if(!_buf["mass"].IsNumber) { throw new SerializationException(); }  Mass = _buf["mass"]; }
+        { var _j = _buf["radius"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Radius = _j; } } else { Radius = null; } }
+        { var _j = _buf["speed"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Speed = _j; } } else { Speed = null; } }
+        { var _j = _buf["mass"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Mass = _j; } } else { Mass = null; } }
         { if(!_buf["abnormal"].IsNumber) { throw new SerializationException(); }  Abnormal = _buf["abnormal"]; }
         { if(!_buf["capacity"].IsNumber) { throw new SerializationException(); }  Capacity = _buf["capacity"]; }
         { if(!_buf["condition"].IsString) { throw new SerializationException(); }  Condition = _buf["condition"]; }
@@ -69,15 +69,15 @@ public sealed partial class Planet : Luban.BeanBase
     /// <summary>
     /// 半径
     /// </summary>
-    public readonly float Radius;
+    public readonly float? Radius;
     /// <summary>
     /// 速度
     /// </summary>
-    public readonly float Speed;
+    public readonly float? Speed;
     /// <summary>
     /// 质量
     /// </summary>
-    public readonly float Mass;
+    public readonly float? Mass;
     /// <summary>
     /// 异常
     /// </summary>

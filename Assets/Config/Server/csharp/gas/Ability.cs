@@ -22,10 +22,10 @@ public sealed partial class Ability : Luban.BeanBase
         { if(!_buf["ability_name"].IsString) { throw new SerializationException(); }  AbilityName = _buf["ability_name"]; }
         { if(!_buf["ability_desc"].IsString) { throw new SerializationException(); }  AbilityDesc = _buf["ability_desc"]; }
         { var __json0 = _buf["asset_tags"]; if(!__json0.IsArray) { throw new SerializationException(); } AssetTags = new System.Collections.Generic.List<string>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { string __v0;  { if(!__e0.IsString) { throw new SerializationException(); }  __v0 = __e0; }  AssetTags.Add(__v0); }   }
-        { if(!_buf["cooldown_duration"].IsNumber) { throw new SerializationException(); }  CooldownDuration = _buf["cooldown_duration"]; }
-        { if(!_buf["channel_duration"].IsNumber) { throw new SerializationException(); }  ChannelDuration = _buf["channel_duration"]; }
-        { if(!_buf["ready_duration"].IsNumber) { throw new SerializationException(); }  ReadyDuration = _buf["ready_duration"]; }
-        { if(!_buf["cast_range"].IsNumber) { throw new SerializationException(); }  CastRange = _buf["cast_range"]; }
+        { var _j = _buf["cooldown_duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  CooldownDuration = _j; } } else { CooldownDuration = null; } }
+        { var _j = _buf["channel_duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  ChannelDuration = _j; } } else { ChannelDuration = null; } }
+        { var _j = _buf["ready_duration"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  ReadyDuration = _j; } } else { ReadyDuration = null; } }
+        { var _j = _buf["cast_range"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  CastRange = _j; } } else { CastRange = null; } }
         { if(!_buf["trigger_count"].IsNumber) { throw new SerializationException(); }  TriggerCount = _buf["trigger_count"]; }
         { if(!_buf["ability_logic"].IsObject) { throw new SerializationException(); }  AbilityLogic = global::GameConfig.AbilityLogic.DeserializeAbilityLogic(_buf["ability_logic"]);  }
         { var __json0 = _buf["cancel_ability_with_tags"]; if(!__json0.IsArray) { throw new SerializationException(); } CancelAbilityWithTags = new System.Collections.Generic.List<string>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { string __v0;  { if(!__e0.IsString) { throw new SerializationException(); }  __v0 = __e0; }  CancelAbilityWithTags.Add(__v0); }   }
@@ -63,19 +63,19 @@ public sealed partial class Ability : Luban.BeanBase
     /// <summary>
     /// 冷却时间
     /// </summary>
-    public readonly float CooldownDuration;
+    public readonly float? CooldownDuration;
     /// <summary>
     /// 引导时间
     /// </summary>
-    public readonly float ChannelDuration;
+    public readonly float? ChannelDuration;
     /// <summary>
     /// 待命时间
     /// </summary>
-    public readonly float ReadyDuration;
+    public readonly float? ReadyDuration;
     /// <summary>
     /// 施放范围
     /// </summary>
-    public readonly float CastRange;
+    public readonly float? CastRange;
     /// <summary>
     /// 触发次数
     /// </summary>

@@ -22,7 +22,7 @@ public sealed partial class Glossary : Luban.BeanBase
         { if(!_buf["displayName"].IsString) { throw new SerializationException(); }  DisplayName = _buf["displayName"]; }
         { if(!_buf["desc"].IsString) { throw new SerializationException(); }  Desc = _buf["desc"]; }
         { var _j = _buf["color"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsObject) { throw new SerializationException(); }  Color = global::GameConfig.color.Deserializecolor(_j);  } } else { Color = null; } }
-        { if(!_buf["icon"].IsNumber) { throw new SerializationException(); }  Icon = _buf["icon"]; }
+        { var _j = _buf["icon"]; if (_j.Tag != JSONNodeType.None && _j.Tag != JSONNodeType.NullValue) { { if(!_j.IsNumber) { throw new SerializationException(); }  Icon = _j; } } else { Icon = null; } }
         { var __json0 = _buf["related_keywords"]; if(!__json0.IsArray) { throw new SerializationException(); } RelatedKeywords = new System.Collections.Generic.List<string>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { string __v0;  { if(!__e0.IsString) { throw new SerializationException(); }  __v0 = __e0; }  RelatedKeywords.Add(__v0); }   }
     }
 
@@ -54,7 +54,7 @@ public sealed partial class Glossary : Luban.BeanBase
     /// <summary>
     /// 图标
     /// </summary>
-    public readonly float Icon;
+    public readonly float? Icon;
     /// <summary>
     /// 相关关键词
     /// </summary>
